@@ -1,0 +1,62 @@
+/* pages/binding/binding.wxss */
+
+.binding{
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
+.binding .title{
+  margin-top: 82rpx;
+  width: 182rpx;
+  font-size: 32rpx;
+  /* border: 1px solid red; */
+  padding: 6rpx 9rpx 6rpx 4rpx;
+  position: relative;
+  margin-left: 39rpx;
+ 
+}
+.binding .title::after{
+  content:'';
+  display:block;
+  width: 100%;
+  height: 18rpx;
+  background: #ffdccf;
+  position: absolute;
+  bottom: 2rpx;
+  left: -2rpx;
+  z-index: -1;
+}
+.binding .wrapper{
+
+margin-top: 77rpx;
+color: #fe8e6b;
+margin-left: 55rpx;
+margin-right: 55rpx;
+margin-bottom: 84rpx;
+}
+.binding .account input{
+margin-bottom: 56rpx;
+
+}
+.binding .account input,.binding .password input{
+border: 2px solid #fe8e6b;
+width: 640rpx;
+height: 80rpx;
+border-radius: 16rpx;
+padding-left:35rpx; 
+box-sizing: border-box;
+}
+.binding .tips{
+  margin-top:48rpx;
+  display: flex;
+  justify-content: center;
+  color: #fe8e6b;
+  font-size: 25rpx;
+}
+.binding .bg{
+  width: 750rpx;
+  height: 388rpx;
+  position: absolute;
+  bottom: 0;
+}
+

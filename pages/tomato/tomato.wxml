@@ -1,0 +1,19 @@
+<!--pages/tomato/tomato.wxml-->
+<view class="cantainer">
+  <t-clock class="clock" text='{{time}}' font-size='46'></t-clock>
+  <view wx:if='{{!againButtonVisible}}'>
+    <view style="margin-top:80rpx" class="stop">
+      <t-button size="mini" text='暂停' bindtap="pause" wx:if='{{timerStatus}}'></t-button>
+      <t-button size="mini" text='开始' bindtap="start" wx:if='{{!timerStatus}}'></t-button>
+    </view>
+    <view>
+      <t-button type='change' size="mini" text='放弃' bindtap="abandonShow"></t-button>
+    </view>
+  </view>
+  <view class="again" wx:else>
+    <t-button size="mini" text='再来一组' bindtap="againTimer"></t-button>
+  </view>
+  <t-confirm placeholder="放弃的理由" bindconfirm="confirmAbandon" bindcancel="hideAbandon" visible="{{visibleAbandon}}"></t-confirm>
+  <t-confirm placeholder="完成了什么" bindconfirm="confirmFinished" bindcancel="hideFinished" visible="{{visibleFinished}}"></t-confirm>
+
+</view>

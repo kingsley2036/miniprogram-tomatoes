@@ -1,0 +1,17 @@
+<!--pages/binding/binding.wxml-->
+<view class="binding">
+  <view class="title">绑定pc账号</view>
+  <view class="wrapper">
+  <view class="account">
+    <input placeholder="账号"></input>
+  </view>
+  <view class="password">
+    <input placeholder="密码"></input>
+  </view>
+  </view>
+  <t-button class="loginButton" type="change" size="mini" text="登录"></t-button>
+  <view class="tips">
+    <text>还没有PC账号，注册吧兄弟</text>
+  </view>
+  <image src="../../images/tomato-bg.png" class="bg"></image>
+</view>

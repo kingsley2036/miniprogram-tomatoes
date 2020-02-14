@@ -1,0 +1,59 @@
+/* pages/login/login.wxss */
+.login{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #EEF7F6;
+  align-items: center;
+  box-sizing: border-box;
+}
+.login .avatar{
+  width: 269rpx;
+  height: 269rpx;
+  border-radius: 50%;
+  border: 16rpx solid #F6705A;
+  overflow: hidden;
+  margin-top: 283rpx;
+  margin-bottom: 22rpx
+}
+.login .name-wrap{
+  /* border: 1px solid red; */
+  font-size: 36rpx;
+  color: #F6705A;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80rpx;
+
+}
+.login .name-wrap::after{
+  content: "";
+  display: block;
+  height: 4rpx;
+  width: 180rpx;
+  background: #F6705A;
+  bottom: -14rpx;
+  position: absolute;
+}
+button::after {
+  border: none;
+}
+.button-hover{
+  opacity: 0.6;
+}
+.login .loginButton{
+width: 360rpx;
+height: 80rpx;
+background: linear-gradient(to right, #EF9B75, #F6705A);
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 16rpx;
+}
+.login .binding{
+  font-size: 25rpx;
+  margin-top: 46rpx;
+  color: #F6705A;
+}
